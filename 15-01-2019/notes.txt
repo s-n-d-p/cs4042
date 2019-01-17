@@ -1,0 +1,17 @@
+Object
+    Array
+        Some of the methods are in-place and some are not.
+        For e.g. Concat does not modify the array.
+        Sort, reverse .... does
+    String
+        toUpperCase, toLowerCase, charAt, indexOf, lastIndexOf, substring, split, trim, replace 
+    Numeric 
+    Boolean 
+
+var hotel = {
+    name: "Iftaar",
+    property: value
+    f: function(){
+    }
+}
+

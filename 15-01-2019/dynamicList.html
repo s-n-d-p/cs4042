@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+            var names = [];
+            function updateForm(){
+                var elem = document.getElementById("playerName");
+                if(elem.value != ""){
+                    names[names.length] = String(elem.value);
+                }
+                var ls = '<ol>';
+                for(i = 0; i < names.length; i++){
+                    ls = ls + '<li>' + names[i] + '</li>';
+                }
+                ls = ls + '</ol>';
+                document.getElementById("dynamicForm").innerHTML = ls;
+            }
+        </script>
+    </head>
+    <body>
+        <input id = "playerName" type = "text">
+        <input type = "button" value = "Add Player" onclick="updateForm()">
+        <div id = "dynamicForm"></div>
+
+    </body>
+</html>

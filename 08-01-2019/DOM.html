@@ -1,0 +1,39 @@
+<html>
+
+    <head>
+        <script>
+            document.write(document.lastModified);
+            document.getElementById("hello");
+            var clickCount = 0;     
+            function change_bg(a) {
+                document.bgColor = a;
+            }
+            function loop_bg() {
+                clickCount=(clickCount+1) % 4;
+                switch (clickCount) {
+                    case 1:
+        
+                        document.bgColor = 'orange';
+                        break;
+                    case 2:
+        
+                        document.bgColor = 'green';
+                        break;
+                    case 3:
+        
+                        document.bgColor = 'yellow';
+                        break;
+                    case 0:
+        
+                        document.bgColor = 'white';
+                        break;       
+                }     
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="hello">Document Object Model</h1>
+        <p>Previously... Browser Object Model</p>
+        <button onclick="loop_bg()">LOOP ALL?</button>
+    </body>
+</html>

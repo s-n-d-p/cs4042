@@ -1,0 +1,28 @@
+<!-- events: onclick, onkeyup -->
+<html>
+    <head>
+        <script>
+            function check(){
+                var elem = document.getElementById("cpy");
+                if(elem.checked){
+                    document.getElementById("sadrs").value =
+                        document.getElementById("padrs") .value;
+                    document.getElementById("szc").value = 
+                        document.getElementById("pzc") .value;
+                } else{
+                    document.getElementById("sadrs").value = "";
+                    document.getElementById("szc").value = "";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <b>Primary Address</b><br>
+        Address <input id="padrs" type="text" name="padrs" onkeyup="check()"><br>
+        Zipcode <input id="pzc" type="text" name="pzc" onkeyup="check()"><br>
+        <input id="cpy" type="checkbox" onclick="check()">To Copy<br>
+        <b>Secondary Address</b><br>
+        Address <input id="sadrs" type="text" name="sadrs"><br>
+        Zipcode <input id="szc" type="text" name="szc"><br>
+    </body>
+</html>

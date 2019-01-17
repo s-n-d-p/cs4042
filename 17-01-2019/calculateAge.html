@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <script>
+            function getAge() {
+                var text = document.getElementById("age");
+                var date = document.getElementById("date");
+
+                var DOB = date.value;
+                var arr = DOB.split('/');
+                var today = new Date();
+                var age = today.getFullYear() - arr[2];
+                if (today.getMonth() + 1 < arr[1]) {
+                    age--;
+                }
+                if (today.getMonth() + 1 == arr[1]) {
+                    if (today.getDate() < arr[0]) {
+                        age--;
+                    }
+                }
+                text.innerHTML = "<br>You are " + age + " year(s) old!!!"
+            }
+        </script>
+    </head>
+    <body>
+        <div>Enter DOB</div>
+        <input type="text" id="date">
+        <button onclick="getAge()">Get Age</button>
+        <span id="age"></span>
+    </body>
+</html>

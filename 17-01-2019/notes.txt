@@ -1,0 +1,46 @@
+Important for T1: DOM, Events & Form Validation
+-----------------------------------------------
+
+Number
+    -toFixed
+    -toPrecision
+    -valueOf
+    -toString
+    
+Date
+    -new Date
+    -getDate
+    -getDay/Month/FullYear 
+
+
+Events in 6 categories:
+-----------------------
+
+---- UI Events
+    -> load
+    -> unload
+    -> resize
+    -> scroll
+---- Keyboard Events
+    -> keypress
+    -> keydown
+    -> keyup
+---- Mouse Events
+    -> click
+    -> dbClick
+    -> mouseover
+    -> mouseup
+    -> mousedown
+    -> mousemove
+----Focus
+    -> focus
+    -> blur
+----Form 
+    -> input 
+    -> change
+    -> submit 
+    -> reset 
+----Mutation Events
+    -> DomSubtreeModifed
+    -> DomNodeInserted
+    -> DomNodeRemoved

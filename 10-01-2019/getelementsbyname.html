@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            function passwordQuality(){
+                var elemInput = document.getElementsByTagName("input");
+                pwdLength = elemInput[0].value.length;
+                elem = document.getElementById("pwdquality");
+                elem.innerText = "Strong";
+                if(pwdLength <= 6) elem.innerText = "Poor";
+                document.bgColor = elemInput[0].value;
+            }
+        </script>
+    </head>
+    <body>
+        <input type="password" onkeyup="passwordQuality()"><span id="pwdquality"></span>
+    </body>
+</html>

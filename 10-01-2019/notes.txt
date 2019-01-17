@@ -1,0 +1,33 @@
+Syllabus for T1
+---------------
+
+    HTML
+    CSS
+    JavaScript
+        datatypes
+        variables 
+        browser object module
+        document object module 
+        objects 
+            array
+            string
+            numeric 
+            math 
+            date 
+        events
+        form validation
+        cookies
+
+
+-------------------------------------------
+DOM Tree 
+    document node 
+    element node 
+    text node 
+    attribute node 
+
+getelement
+    by id
+    by name (getelementsbyname) // list 
+    queryselector //self - learn
+    queryselectorall //self-learn

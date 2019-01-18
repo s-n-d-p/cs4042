@@ -1,0 +1,38 @@
+<!-- display city of selected state from a drop down list in another list -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var state = ['Kerala', 'Punjab', 'Delhi'];
+            var city = {
+                        'Kerala': ["Kollam", "Ernakulam", "Edapally"], 
+                        'Punjab' : ["Jalandhar", "Patiala", "Mullanpur"],
+                        'Delhi': ["RK Puram", "Dwarka"]
+                    };
+            function updateList(dropDownList){
+                var cityList = document.getElementById("cityList");
+                cityList.innerHTML = "";
+                for(let i = 0; i < city[dropDownList.value].length; i++){
+                    var newElement = document.createElement("li");
+                    var textNode = document.createTextNode(city[dropDownList.value][i]);
+                    newElement.appendChild(textNode);
+                    cityList.appendChild(newElement);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <select id = "stateDropDownList" onchange="updateList(this)"></select>
+        <ol id = "cityList"></ol>
+        <script>
+            var dropDown = document.getElementById("stateDropDownList");
+            for(let i = 0; i < state.length; i++){
+                var newElement = document.createElement("option");
+                newElement.setAttribute("value", state[i]);
+                var textNode = document.createTextNode(state[i]);
+                newElement.appendChild(textNode);
+                dropDown.appendChild(newElement);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!-- 'load' event is added on window -->
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <input type="text" id = "playerName">
+        <input type="button" value="Add Player" id = "addButton">
+        <ol id = "playerList">
+            <li>Ali</li>
+            <li>Bob</li>
+        </ol>
+        <script>
+            window.addEventListener('load',autoFocus,false);
+            var addButton = document.getElementById("addButton");
+            addButton.addEventListener('click',updateList,false);
+            function updateList(){
+                var newItem = document.createElement("li");
+                var newName = document.getElementById("playerName").value;
+                var textNode = document.createTextNode(newName);
+                newItem.appendChild(textNode);
+                document.getElementById("playerList").appendChild(newItem);
+            }
+            function autoFocus(){
+                document.getElementById("playerName").focus();
+            }
+        </script>
+    </body>
+</html>

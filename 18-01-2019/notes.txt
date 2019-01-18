@@ -1,0 +1,71 @@
+// some are properties and others are methods 
+
+working with dom trees
+    access the elements 
+        select an individiual node
+            getElementById 
+            querySelector 
+        select multiple nodes 
+            getElementsByName
+            getElementsByTagName
+            querySelectorAll
+        traverse between nodes 
+            parentNode 
+            previousSibling, nextSibling
+            firstChild, lastChild 
+    work with those elements
+        access/update TextNode 
+            nodeValue 
+        workWithHTML
+            innerHTML //property
+            innerText //property
+            textContent //property
+            createElements //methods
+            createTextNode //methods
+            appendChild, removeChild //methods
+        access and update attributes
+            className/id 
+            hasAttribute 
+            setAttribute 
+            getAttribute
+            removeAttribute 
+
+
+Read:
+    DOM - sibling, structures, different relations
+    Add Event Listener
+    Including scripts on top / below - Difference  
+
+Form 
+    Methods
+        submit()
+        reset() 
+    
+    Elements 
+        input (text, textArea(?))
+        button (submit, reset)
+        checkbox
+        radiobutton
+        select (READ ABOUT THIS - used for drop down creation)
+        image 
+        link 
+        email 
+        password 
+
+        // below methods are applied on above elements 
+        focus 
+        blur  
+        select -- highlight the text area 
+        click
+
+        Forms can be accessed like so:
+            document.form[0]  
+            OR 
+            document.form.login // login is the name attribute value of the form 
+            
+            document.form[0].element[0] // indexing used to particular element 
+            OR 
+            document.form[0].elements_name // name attribute of the element, similar to form name 
+
+            Read about form validation 
+            Javatpoint - Cookies 

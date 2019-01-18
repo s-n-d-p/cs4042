@@ -1,0 +1,26 @@
+<!-- dynamic list using appendChild i.e. modifying the dom structure
+which is more efficient than what was done in last class. -->
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <input type="text" id = "playerName">
+        <input type="button" value="Add Player" id = "addButton">
+        <ol id = "playerList">
+            <li>Ali</li>
+            <li>Bob</li>
+        </ol>
+        <script>
+            var addButton = document.getElementById("addButton");
+            addButton.addEventListener('click',updateList,false);
+            function updateList(){
+                var newItem = document.createElement("li");
+                var newName = document.getElementById("playerName").value;
+                var textNode = document.createTextNode(newName);
+                newItem.appendChild(textNode);
+                document.getElementById("playerList").appendChild(newItem);
+            }
+        </script>
+    </body>
+</html>

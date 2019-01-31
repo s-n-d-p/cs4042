@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function setCookie(){
+                var elem = document.getElementById("color").value;
+                document.bgColor = elem;
+                document.cookie = "color=" + elem;
+            }
+            function getCookie(){
+                document.cookie = "name=sandeep";
+                console.log(document.cookie.length);
+            }
+        </script>
+    </head>
+    <body>
+        <script>getCookie();</script>
+        <input type="text" id="color">
+        <input type="button" onclick="setCookie()">
+    </body>
+</html>

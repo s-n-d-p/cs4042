@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <form action="" target="_self">
+            First name:<br>
+            <input type="text" name="firstname" required><br>
+            Last name:<br>
+            <input type="text" name="lastname"><br>
+            Number (restricted range):<br>
+            <input type="number" name="number" min="10" max="100" id="numberInput"><br>
+            
+
+            <input type="radio" name="radioinput" value="A" id="firstCheck"> A <br>
+            <input type="radio" name="radioinput" value="B" checked> B <br>
+            <input type="radio" name="radioinput" value="C"> C <br>
+
+            <select name="cars" placeholder="Car">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi" selected>Audi</option>
+            </select>
+
+            <input type="submit" value="Submit Here">
+        </form>
+        <form action="/action_page.php">
+            <fieldset>
+              <legend>Personal information:</legend>
+              First name:<br>
+              <input type="text" name="firstname" value="Mickey"><br> 
+              <!-- Mickey would be shown as default value -->
+              Last name:<br>
+              <input type="text" name="lastname" value="Mouse"><br><br>
+              <input type="submit" value="Submit">
+            </fieldset>
+          </form>
+          <input type="text" maxlength  ="7">
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function checkCookies(){
+                if(window.navigator.cookieEnabled == true){
+                    document.write("Cookies are enabled");
+                } else {
+                    document.write("Cookies are disabled")
+                }
+            }
+            function really(){
+                window.alert("You really wanna leave?")
+            }
+            function meow(elem){
+                elem.innerText = "Don't bug me hooman!"
+            }
+            function noMeow(elem){
+                elem.innerText = "Cat"
+            }
+            function oh (elem){
+                window.alert("Too much attention!")
+                elem.onfocus = "";  
+            }
+        </script>
+    </head>
+    <!-- <body onload="checkCookies()" onunload="really()"> -->
+    <button id = "b1" onmouseover="meow(this)" onmouseout="noMeow(this)" onfocus="oh(this)">Cat</button>
+    </body>
+</html>

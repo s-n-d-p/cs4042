@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body id = "body_id">
+        <button id = "b1">Set the trigger</button>
+        <button id = "b2"></button>
+        <script>
+                document.getElementById("b1").onclick = function(){
+                    document.getElementById("b2").innerText = "Trigger";
+                    document.getElementById("b2").onclick = function(){
+                        window.alert("You are awesome!");
+                    }
+                }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+HTML ---------------------------------------------------------        
+    form 
+    what is name tag 
+    button 
+    audio, video (tag and attributes)
+    src vs href 
+    In html CSS - how to?
+        inline
+        external
+        internal 
+
+
+Javascript ---------------------------------------------------------        
+    Operators (Go through all, specially == === != !==)
+    Special Operator - new, instanceof, typeof 
+    Read about scope - function, block, global
+    let vs const vs var
+    the concept of moving the declarations up - (strict)
+    what does document.write() do - which html code does it clear
+    appending numbers with string - diff combinations - try
+    how to define a class 
+    how to define an object (with function)
+
+Browser Object Module - https://en.wikipedia.org/wiki/Browser_Object_Model ---------------------------------------------------------        
+    (browser implementation dependent)
+    Find the hierarchy
+    check out the different objects
+    each object has different methods
+
+Javascript - II ---------------------------------------------------------        
+    Prototype based programming - This type of style allows the creation of an object without first defining its class.
+    Properties, methods, events 
+        events call methods to modify properties 
+    
+Document Object Module ---------------------------------------------------------        
+    (cross-platform, language independent)
+    types of nodes 
+    Read about it - all the terms, naming conventions
+    Seems interesting!
+    Drawing the tree 
+    Methods to modify tree  
+        appendChild
+        createElement
+        createTextNode
+        firstChild
+
+Javascript - III ---------------------------------------------------------        
+    Objects in Javascript - array, string, numeric, boolean, math, date - learn the methods in date 
+    Array, String - methods 
+    events - 6 categories
+    form validation 
+    cookies (not taught in class) - javatpoint.com 
+    type of instance - when new used, when not used  - experiment
+
+
+Javascript functions/methods to be checked ---------------------------------------------------------        
+    //Check return types - and parameters
+    bgColor // it is a property.... window.document.bgColor = "violet"
+    writeLn//  write + newline
+    parseInt(string,base) // base can be from 2-36
+    querySelector 
+    querySelectorAll
+    getElementsByName
+    getElementsByTagName
+    setAttribute
+    isNaN //it is a function isNaN(x)
+    toFixed //method/// x.fixed(2)
+    toPrecision //similar to above
+    valueOf()
+    toString() //method 
+
+
+Misc ---------------------------------------------------------        
+    class attribute 
+    id attribute
+    class attr. vs id attr.
+    textContent Vs innerText 
+    x.keyup = someFunction // without brackets - check out the syntax and semantic
+    addEventListener // what's the 3rd argument
+    load event 
+    focus, blur, select, click 
+    how to make a field mandatory?
+    Keyboard press events 
+
+Pending
+
+accessing form, using document.form[index]
+check how to access form's elements 
+
+    
+To-Do    
+I agree box before Clicking - Accept - Fade out

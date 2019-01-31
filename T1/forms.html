@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<script>
+			function checkName(elem){
+				if(elem.value.length == 0){
+					window.alert("000");
+				} else{
+					if(!isNaN(elem.value)){
+						window.alert("Use only char");
+					}
+				}
+			}
+			function s(){
+				if(document.getElementById("cb").checked == true){
+					document.getElementById("submit").disabled = false;
+				} else{
+					document.getElementById("submit").disabled = true;
+
+				}
+			}
+		</script>
+	</head>
+	<body>
+			<form name="x">
+				name:
+				<input type="text" required onfocusout="checkName(this)" minlength="3"> <br>
+				email: 
+				<input type="email" required> <br>
+				pwd:
+				<input type="password"> <br>
+				<input id="cb" type="checkbox" onchange="s()">
+				<input id="submit" type="submit" disabled> <br>
+			</form>	
+		</body>
+</html>

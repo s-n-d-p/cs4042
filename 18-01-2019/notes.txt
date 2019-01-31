@@ -69,3 +69,7 @@ Form
 
             Read about form validation 
             Javatpoint - Cookies 
+
+    Cookies
+    -------
+    

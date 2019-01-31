@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>TO DO LIST</h1>
+        <input type="text" id="item"><button onclick="add()">Add</button><br>
+        <ul id="task"></ul>
+        <script>
+            function add(){
+                var item = document.getElementById("item");
+                var ul = document.getElementById("task");
+                if(item.value.length != 0){
+                    var node = document.createElement("li");
+                    node.innerHTML = item.value + ' ' + '<button onclick="deleteItem(this.parentNode)">Delete' +'</button>'
+                   	ul.appendChild(node);
+                } 
+                item.value = "";
+            }
+            
+            function deleteItem(elem){
+                var ul = document.getElementById("task");
+                ul.removeChild(elem);
+            }
+        </script>
+    </body>
+</html>

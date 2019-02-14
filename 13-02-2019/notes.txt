@@ -1,0 +1,8 @@
+Super global variable
+    $GLOBALS
+    $_SERVER
+    request
+    $_GET
+    post
+    session 
+    cookie

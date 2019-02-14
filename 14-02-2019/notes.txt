@@ -1,0 +1,27 @@
+mysql 
+    alter
+    create
+    describe
+    delete
+    drop 
+    exit
+    grant
+    insert
+    quit
+
+    rename
+    truncate
+    update
+    use
+    
+    Steps to use MySQL with PHP
+        connect to mysql and select the db
+            new mysqli, die, connect_error`
+        build a query 
+        perform the query
+        retrieve the results 
+        disconnect
+
+    fetch_assoc()['']
+    data_seek
+    fetch_array

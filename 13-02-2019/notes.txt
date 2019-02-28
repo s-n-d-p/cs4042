@@ -6,3 +6,4 @@ Super global variable
     post
     session 
     cookie
+    $_FILES

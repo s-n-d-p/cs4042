@@ -1,0 +1,17 @@
+php 
+    File handling
+    creating a file 
+        fopen(filename, mode) -- check supported modes (r, r+, w, w+, a, a+)
+        fwrite(filehandler, text, length)
+        fclose(filehandler)
+    check if file exists - file_exists(filename)
+
+
+    fgets, fread, fseek - seek_set, seek_cur
+    uploading files 
+        HTML input.type = file, name = 'abc' | form action = "upload.php" , enctype = 'multitype/form-data' method = 'post'
+        PHP $_FILES['abc']['name'] //this name is name of the file while uploading
+            move_uploaded_file 
+
+
+   regex

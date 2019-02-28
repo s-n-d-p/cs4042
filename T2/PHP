@@ -1,0 +1,19 @@
+PHP
+---
+It stands for PHP Hypertext Preprocessor
+The scripts are executed on the server
+
+PHP can:
+	1) generate dynamic web content
+	2) create, open, read, write, delete and close files on the server
+	3) collect form data
+	4) send and receive cookies
+	5) be used to control user-access
+	6) encrypt data
+	7) add, delete, modify data in your database
+
+Why PHP:
+	1) runs on various platforms
+	2) supports almost all servers
+	3) supports multiple databases
+	4) free, easy to learn, efficient

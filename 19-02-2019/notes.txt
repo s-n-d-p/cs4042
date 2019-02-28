@@ -1,0 +1,40 @@
+Java SE (Standard Edition)- Core Java 
+Java EE (Enterprise Edition)- Web application - Servlet, JSP, Web Services, EJB 
+    Component Technologies
+        Web Components
+            Servlet
+            JSP 
+        EJP Components 
+    Service Technologies
+        JMS (Java Message Service)
+        JNDI (Java Naming and Directory Interface)
+        JavaMail application
+        JAAS (Java Authentication and Authorisation service)
+        JTA (Java Transaction API)
+        Web Services
+        JDBC (javax.sql)
+    Communication Technologies
+        HTTP
+        SMTP 
+        IIOP   (Internet Inter-ORB Protocol)
+        RMI (Remote Method Invocation)
+Java ME (Micro Edition) - Mobile applications 
+JavaFX
+
+Tomcat - container for servlet 
+
+Application Server
+    Contains web and ejb containers. It can be used for servlet, jsp, struts, jsf, ejb etc.
+    It is a component based product that lies in the middle tier of a server centric architecture.
+    It provides the middleware services for state maintenance ....
+
+Web Container 
+    It is the part of a web server. 
+    It is responsible for managing the lifecycles of servlets, mapping a URL to a particular servlet and ensuring that the URL requester 
+    has the correct access rights.
+    Life Cycle Management
+    Multithreaded Support
+    Object Pooling 
+    Security...
+
+    Javax.servlet -- Learn <^_^>

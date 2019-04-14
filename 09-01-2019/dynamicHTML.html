@@ -6,7 +6,7 @@
                 var x = parseInt(document.getElementById("padrs").value);
                 var y = parseInt(document.getElementById("pzc").value);
                 z = x+y;
-                var p = document.createElement("p"); // is this p element
+                var p = document.createElement("p"); // is this p element <-- Yes it is indeed a p element
                 var t = document.createTextNode("result is: " + z);
                 p.appendChild(t);
                 document.body.appendChild(p);
@@ -19,6 +19,4 @@
         number1 <input id="padrs" type="text" name="padrs"><br>
         number2 <input id="pzc" type="text" name="pzc" ><br>
         <input type = "button" onclick= "check()" value = "getResult" > 
-        <div id ="1"></div>
-    </body>
 </html>

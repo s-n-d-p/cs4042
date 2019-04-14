@@ -13,16 +13,16 @@ HTML ---------------------------------------------------------
 Javascript ---------------------------------------------------------        
     Operators (Go through all, specially == === != !==)
     Special Operator - new, instanceof, typeof 
-    Read about scope - function, block, global
+    Read about scope - function, block, global, loop
     let vs const vs var
-    the concept of moving the declarations up - (strict)
-    what does document.write() do - which html code does it clear
+    the concept of moving the declarations up - (hoisting)
+    what does document.write() do - which html code does it clear (the one which is already loaded)
     appending numbers with string - diff combinations - try
     how to define a class 
-    how to define an object (with function)
+    how to define an object (with function) -- similar, just use name: function(){}
 
 Browser Object Module - https://en.wikipedia.org/wiki/Browser_Object_Model ---------------------------------------------------------        
-    (browser implementation dependent)
+    (browser implementation dependent) -- no official standards
     Find the hierarchy
     check out the different objects
     each object has different methods
@@ -47,7 +47,7 @@ Document Object Module ---------------------------------------------------------
 Javascript - III ---------------------------------------------------------        
     Objects in Javascript - array, string, numeric, boolean, math, date - learn the methods in date 
     Array, String - methods 
-    events - 6 categories
+    events - 6 categories -- Check out 17-01-2019 notes
     form validation 
     cookies (not taught in class) - javatpoint.com 
     type of instance - when new used, when not used  - experiment

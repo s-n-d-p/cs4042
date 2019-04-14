@@ -17,3 +17,46 @@ Why PHP:
 	2) supports almost all servers
 	3) supports multiple databases
 	4) free, easy to learn, efficient
+
+Interesting facts:
+	1) classes, functions, user-defined functions, keywords are case-insensitive
+	2) variable names are case-sensitive
+
+echo vs print
+	- both can be used with/without parantheses
+	- echo has no return value, print has return value of 1
+	- echo is slightly faster than print
+
+Data types:
+	Strings
+		strlen(string), str_word_count(str), strrev(str), strpos(text, pattern) - pos/False
+	Integer
+	Float
+	Boolean
+	Array
+		sort(array), rsort(array), asort(array) -- sort associative array according to value, ksort(array) -- sort associative array accoring to key, arsort(array), krsort(array)
+	Object
+	NULL
+	Resource
+
+var_dump(variable) - returns data type and value
+	int(12), float(12.2), bool(true), string(str.length) "str",
+	array(3) { [0]=> int(1) [1]=> int(2) [2]=> int(3) }
+
+Object
+	- an object must explicitly be declared like so $myCar = new Car();
+	- class Car{
+		function Car(){
+			$this->model = "XYZ";
+		}
+	}
+
+NULL
+	If a variable is created without a value, it is set to NULL automatically
+
+Resource
+	It is the storing of a reference to functions and resources external to PHP
+
+-------------------------------------------------------------------------
+Superglobals
+	Always accessible, regardless of scope - access from any function, class or file

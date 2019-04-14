@@ -1,0 +1,64 @@
+// Read about String vs Symbol
+
+puts, print
+gets 
+
+puts "Hello World"
+puts "Hello"*3 
+PI = 3.1415
+puts PI 
+
+Arrays
+    Negative indexing works like python 
+    Dynamically sizeable 
+    Outofbound exception does not exist -- returns nil 
+    Arrays are mutable
+    Hetergeneous 
+
+    Example 
+        var1 = []
+        puts var1[0] # 0 based indexing 
+        arr.sort 
+        arr.length 
+
+        locations = ['Pune','Mumbai','Bangalore']
+        locations.each do |loc|
+            puts loc 
+        end 
+
+    a = 1,2,3,4  //becomes array 
+    b = 1,2,3,4
+    a,b = 1,2,3,4 // more than variable on lhs, more than on rhs...equate by intuition, discard remaining
+    c, = 1,2,3,4 // the comma does not let it become array 
+
+Symbols (Similar to strings) 
+    If the contents of the object are important, use string 
+    If the identity of the object is important, use a symbol 
+
+    Declare using :name 
+
+Hashes 
+    Sometimes known as associative arrays, maps or dictionaries
+    Index can be strings, regular expressions, and so on 
+    sub = {""=>"",""=>""} # accessing is sub[index]
+
+    people = Hash.new 
+
+Inheritance
+    Ruby supports single class Inheritance
+    Mixins can be used for multiple class inheritance 
+
+
+HackerRank Learnings 
+--------------------
+
+(0...gets.to_i).each do |i|
+    doSomething
+end 
+
+number.even? number.odd?
+a.range?(b,c)
+
+
+#TO LEARN FROM HACKERRANK
+control structures, symbols, inheritance ,modules

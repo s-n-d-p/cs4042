@@ -1,2 +1,2 @@
 createElement()
-createTexNode()
+createTextNode()

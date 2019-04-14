@@ -1,0 +1,44 @@
+Modules
+
+    Provides a namespace and prevent name clash 
+    It implements mixin 
+
+    # support.rb
+    module identifier
+        stmt1 
+        stmt2
+    end
+
+
+
+    $LOAD_PATH << "." # this is to set the path 
+    require "support" # file name 
+
+    include Week # module name 
+    Week::Variable name 
+    Week.function_name()
+
+    Rails 
+        Server-side web application development framework
+        Less code than other languages and frameworks 
+
+        Scripts
+        Generators 
+        Migrations
+        Routing 
+
+        Model 
+            The models are classes in Rails. They interact with db, store data, handles validation, transaction etc.
+
+            ActiveRecord library
+
+        View 
+            HTML, CSS, JavaScript and XML 
+            ActionView Library 
+        
+
+        Controller 
+            Directs traffic to views and models 
+            ActionController Library
+
+    Directory Structure 

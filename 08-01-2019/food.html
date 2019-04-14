@@ -8,11 +8,11 @@
     var txt = 0;
 
     function get_bill() {
-        document.querySelector('input[name="food"]:checked').value;
         var foodForm = document.forms[0];
         for (i = 0; i < foodForm.length; i++) {
             if (foodForm[i].checked) {
                 document.getElementById("result").innerHTML = foodForm[i].value;
+		break;
             }
         }
 
@@ -24,15 +24,15 @@
     <h1>Food SHop</h1>
 
 
-    <form action="#">
+    <form action="">
         <input type="radio" name="food" id="pizza" value="80">Pizza 80<br>
         <input type="radio" name="food" id="burger" value="70">Burger 70<br>
         <input type="radio" name="food" id="icecream" value="30">Ice cream 30<br>
-        <input type="submit" value="FOOOOD  " onclick="get_bill()">
+        <input type="button" onclick="get_bill()">
 
     </form>
 
-    <input type="text" id="result">
+    <span id = "result"></span>
 </body>
 
 

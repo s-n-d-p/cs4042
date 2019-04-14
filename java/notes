@@ -1,0 +1,18 @@
+the servlet is initialized by calling the init() method
+	one-time initialisation.
+	
+	public void init() throws ServletException {
+   		// Initialization code...
+	}
+
+the servlet calls service() method to process a client's request
+	
+	public void service(ServletRequest request, ServletResponse response) 
+ 		throws ServletException, IOException {
+	}
+
+the servlet is terminated by calling the destroy() method
+
+	public void destroy(){
+		//finalization code
+	}

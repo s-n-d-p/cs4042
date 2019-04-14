@@ -1,0 +1,10 @@
+validations, associations, commands, scripting(?)  no authentication
+
+T2 has more weightage
+Quiz sometime next week 
+
+Web service - interface between user and web application
+
+Web service
+    SOAP - Service Oriented Architecture Protocol
+    ReST - Representational State Transfer

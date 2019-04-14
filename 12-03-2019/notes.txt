@@ -1,0 +1,78 @@
+Model-View-Converter is an architectural pattern
+
+Model  
+    Model code typically reflects real-world things 
+    This code can hold raw data, or it will define the essential components of your app 
+
+View 
+    View code is made up of all the functions that directly interact with the user
+    This is the code that makes your app look nice, and otherwise defines how user sees
+
+Controller
+    It's the brains of the application
+
+Advantages of MVC 
+    Multiple developers can work simultaneously on the model 
+    MVC enables logical grouping of related actions on a controller together    
+    The very nature of the MVC framework is to allow low coupling.
+
+List of MVC 
+    Zend for PHP 
+    Struts for Java 
+    Django for Python 
+    Ruby for Rails 
+
+[[Practice Ruby - Hackerrank]]
+[[Practice Ruby on Rails - Codeacademy]]
+
+Ruby (.rb extension)
+    (Apple, Github, Twitter use this)
+    Open source, server side scripting language 
+    Fully object oriented programming 
+    Mixins are used // What is that? Oo
+
+    Example
+        length = gets.chomp.to_i //chomp is to remove new line char and to_i converts to integer  
+        puts " #{area}"
+
+    Data Types 
+        Numbers 
+        Strings
+        Symbols 
+        Hashes 
+        Arrays 
+        Booleans 
+
+    Variables 
+        Local 
+        Instance 
+        Class
+        Global 
+
+    Example:
+
+        # Example1.rb 
+        # Class definition 
+
+        class Square
+            @@object_count = 0 
+            #class variable 
+
+            def initialize(side)
+                @side = side #instance variable 
+                @@object_count = @@object_count + 1 
+            end 
+
+            def get_area 
+                return @side*@side 
+            end 
+
+            def self.no_of_object #class method 
+                print @@object_count 
+            end 
+        end 
+
+        # Declaring class' object using new keyword 
+        a = Square.new(4)
+        puts a.get_area 
+        puts Square.no_of_object # calling class method 
